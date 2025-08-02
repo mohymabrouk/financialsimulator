@@ -210,7 +210,11 @@ const VolatilitySurface: React.FC<VolatilitySurfaceProps> = ({
     }
   }, []);
 
-  const options: ChartOptions<'line'> = useMemo(() => ({
+
+
+
+
+    const options: ChartOptions<'line'> = useMemo(() => ({
     responsive: true,
     maintainAspectRatio: false,
     interaction: {
@@ -266,7 +270,7 @@ const VolatilitySurface: React.FC<VolatilitySurfaceProps> = ({
           font: {
             family: 'Inter, system-ui, sans-serif',
             size: 12,
-            weight: '600',
+            weight: 600,
           },
         },
         ticks: {
@@ -289,7 +293,7 @@ const VolatilitySurface: React.FC<VolatilitySurfaceProps> = ({
           font: {
             family: 'Inter, system-ui, sans-serif',
             size: 12,
-            weight: '600',
+            weight: 600, 
           },
         },
         ticks: {
@@ -319,6 +323,9 @@ const VolatilitySurface: React.FC<VolatilitySurfaceProps> = ({
       },
     },
   }), []);
+
+
+  
 
   if (loading) {
     return (
@@ -419,5 +426,6 @@ const VolatilitySurface: React.FC<VolatilitySurfaceProps> = ({
 };
 
 export default VolatilitySurface;
+
 
 
