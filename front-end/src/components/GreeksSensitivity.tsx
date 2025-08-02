@@ -82,7 +82,7 @@ const GreeksSensitivity: React.FC<GreeksSensitivityProps> = ({
       setLoading(true);
       setError(null);
 
-      const response = await fetch('http://localhost:5000/api/greeks-sensitivity', {
+      const response = await fetch('https://financialsimulator.onrender.com/api/greeks-sensitivity', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -412,5 +412,6 @@ const GreeksSensitivity: React.FC<GreeksSensitivityProps> = ({
 };
 
 export default GreeksSensitivity;
+
 
 
