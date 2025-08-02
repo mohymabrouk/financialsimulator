@@ -176,11 +176,10 @@ const GreeksSensitivity: React.FC<GreeksSensitivityProps> = ({
           pointHoverRadius: 4,
           pointBackgroundColor: '#ffffff',
           pointBorderColor: '#ffffff',
-        },
+        } as any,
       ],
     };
   }, [sensitivityData, selectedGreek]);
-
   const chartOptions = useMemo((): ChartOptions<'line'> => ({
     responsive: true,
     maintainAspectRatio: false,
@@ -412,3 +411,4 @@ const GreeksSensitivity: React.FC<GreeksSensitivityProps> = ({
 };
 
 export default GreeksSensitivity;
+
