@@ -93,7 +93,7 @@ const PortfolioOptimizer: React.FC = () => {
         max_weight: getNumericValue(asset.max_weight)
       }));
 
-      const response = await fetch('http://localhost:5000/api/portfolio-optimization', {
+      const response = await fetch('https://financialsimulator.onrender.com/api/portfolio-optimization', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -395,3 +395,4 @@ const PortfolioOptimizer: React.FC = () => {
 };
 
 export default PortfolioOptimizer;
+
