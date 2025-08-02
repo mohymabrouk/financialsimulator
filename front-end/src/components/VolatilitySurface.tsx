@@ -237,7 +237,7 @@ const VolatilitySurface: React.FC<VolatilitySurfaceProps> = ({
         font: {
           family: 'Inter, system-ui, sans-serif',
           size: 16,
-          weight: '600',
+          weight: 600,
         },
         padding: {
           top: 10,
@@ -419,4 +419,5 @@ const VolatilitySurface: React.FC<VolatilitySurfaceProps> = ({
 };
 
 export default VolatilitySurface;
+
 
