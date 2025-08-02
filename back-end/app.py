@@ -1039,14 +1039,15 @@ def greeks_sensitivity():
         logger.error(f"Error in greeks_sensitivity: {str(e)}")
         return jsonify({'error': str(e)}), 400
 
-@app.route('/health', methods=['GET'])
+@app.route('/')
 def health_check():
-    return jsonify({
-        'status': 'healthy',
-        'timestamp': datetime.now().isoformat(),
-        'version': '2.0.0'
-    })
+    return {"status": "API is running", "message": "Flask backend is healthy"}
+
+@app.route('/health')
+def health():
+    return {"status": "healthy"}
 
 if __name__ == '__main__':
     logger.info("Starting Backend Server...")
+
     app.run(debug=True, host='0.0.0.0', port=5000, threaded=True)
