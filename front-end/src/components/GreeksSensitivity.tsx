@@ -134,7 +134,7 @@ const GreeksSensitivity: React.FC<GreeksSensitivityProps> = ({
 
   const handleParameterChange = (key: keyof OptionParameters, value: string): void => {
     if (key === 'optionType') {
-      setParameters(prev => ({ ...prev, [key]: value }));
+      setParameters(prev => ({ ...prev, [key]: value as 'call' | 'put' }));
       onParameterChange?.({ ...parameters, [key]: value as 'call' | 'put' });
       return;
     }
@@ -412,5 +412,3 @@ const GreeksSensitivity: React.FC<GreeksSensitivityProps> = ({
 };
 
 export default GreeksSensitivity;
-
-
