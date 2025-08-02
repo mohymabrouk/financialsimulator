@@ -102,7 +102,7 @@ const AdvancedPricingModels: React.FC = () => {
         jump_volatility: typeof mertonParams.jump_volatility === 'string' ? parseFloat(mertonParams.jump_volatility) || 0 : mertonParams.jump_volatility,
       };
 
-      const response = await fetch('http://localhost:5000/api/advanced-pricing', {
+      const response = await fetch('https://financialsimulator.onrender.com/api/advanced-pricing', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -267,3 +267,4 @@ const AdvancedPricingModels: React.FC = () => {
 };
 
 export default AdvancedPricingModels;
+
