@@ -34,7 +34,7 @@ const OptionCalculator: React.FC = () => {
 
     try {
       const response: AxiosResponse<CalculationResponse> = await axios.post(
-        'http://localhost:5000/api/calculate',
+        'https://financialsimulator.onrender.com/api/calculate',
         inputs
       );
       setResults(response.data);
@@ -228,3 +228,4 @@ const OptionCalculator: React.FC = () => {
 };
 
 export default OptionCalculator;
+
