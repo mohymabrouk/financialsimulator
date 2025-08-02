@@ -180,32 +180,33 @@ const GreeksSensitivity: React.FC<GreeksSensitivityProps> = ({
       ],
     };
   }, [sensitivityData, selectedGreek]);
+  
   const chartOptions = useMemo((): ChartOptions<'line'> => ({
-    responsive: true,
-    maintainAspectRatio: false,
-    interaction: {
-      intersect: false,
-      mode: 'index',
-    },
-    plugins: {
-      legend: {
-        position: 'top' as const,
-        labels: {
-          color: '#ffffff',
-          font: {
-            family: 'Inter, system-ui, sans-serif',
-            size: 12,
-          },
-        },
-      },
-      title: {
-        display: true,
-        text: `${selectedGreek.charAt(0).toUpperCase() + selectedGreek.slice(1)} Sensitivity Analysis`,
+  responsive: true,
+  maintainAspectRatio: false,
+  interaction: {
+    intersect: false,
+    mode: 'index',
+  },
+  plugins: {
+    legend: {
+      position: 'top' as const,
+      labels: {
         color: '#ffffff',
         font: {
           family: 'Inter, system-ui, sans-serif',
-          size: 16,
-          weight: '600',
+          size: 12,
+        },
+      },
+    },
+    title: {
+      display: true,
+      text: `${selectedGreek.charAt(0).toUpperCase() + selectedGreek.slice(1)} Sensitivity Analysis`,
+      color: '#ffffff',
+      font: {
+        family: 'Inter, system-ui, sans-serif',
+        size: 16,
+        weight: 600,
         },
       },
       tooltip: {
@@ -411,4 +412,5 @@ const GreeksSensitivity: React.FC<GreeksSensitivityProps> = ({
 };
 
 export default GreeksSensitivity;
+
 
