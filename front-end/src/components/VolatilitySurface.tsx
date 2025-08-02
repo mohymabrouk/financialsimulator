@@ -13,7 +13,7 @@ import {
   Legend,
   ChartOptions,
 } from 'chart.js';
-import { SurfaceDataPoint, VolatilitySurfaceResponse } from '../../../frontend/app/types';
+import { SurfaceDataPoint, VolatilitySurfaceResponse } from '@/types';
 
 ChartJS.register(
   CategoryScale,
@@ -419,3 +419,4 @@ const VolatilitySurface: React.FC<VolatilitySurfaceProps> = ({
 };
 
 export default VolatilitySurface;
+
