@@ -87,7 +87,7 @@ const VolatilitySurface: React.FC<VolatilitySurfaceProps> = ({
       setLoading(true);
       setError(null);
 
-      const response = await fetch('http://localhost:5000/api/volatility-surface', {
+      const response = await fetch('https://financialsimulator.onrender.com/api/volatility-surface', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -426,6 +426,7 @@ const VolatilitySurface: React.FC<VolatilitySurfaceProps> = ({
 };
 
 export default VolatilitySurface;
+
 
 
 
