@@ -1,4 +1,4 @@
-# 📊 Financial Simulator
+# 📊 Financial Options Trading Dashboard
 
 **An educational options trading dashboard for learning derivatives pricing, risk management, and portfolio theory.**
 
