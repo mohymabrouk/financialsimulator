@@ -51,9 +51,7 @@ This project simulates real options trading scenarios to help students and finan
 
 ## ⚡ Quick Start
 
-Just visit:  
-👉 [https://financialsimulator-frontend.onrender.com/](https://financialsimulator-frontend.onrender.com/)  
-...and start using it immediately.
+Just visit:  [https://financialsimulator-frontend.onrender.com/](https://financialsimulator-frontend.onrender.com/)  and start using it immediately.
 
 ---
 
