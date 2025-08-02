@@ -13,7 +13,7 @@ import {
   Legend,
   ChartOptions,
 } from 'chart.js';
-import { SensitivityDataPoint, SensitivityResponse, GreekType, LineChartData } from '@/app/types';
+import { SensitivityDataPoint, SensitivityResponse, GreekType, LineChartData } from '@/types';
 
 ChartJS.register(
   CategoryScale,
@@ -412,4 +412,5 @@ const GreeksSensitivity: React.FC<GreeksSensitivityProps> = ({
 };
 
 export default GreeksSensitivity;
+
 
