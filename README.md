@@ -1,11 +1,11 @@
-# 📊 Financial Options Trading Dashboard
+# Financial Options Trading Dashboard
 
 **An educational options trading dashboard for learning derivatives pricing, risk management, and portfolio theory.**
 
 ---
 
 ### 🔗 Live Demo  
-👉 Try it now: [https://financialsimulator-frontend.onrender.com/](https://financialsimulator-frontend.onrender.com/)
+Try it now: [https://financialsimulator-frontend.onrender.com/](https://financialsimulator-frontend.onrender.com/)
 
 > No installation needed — just open the link and start experimenting with options pricing and delta hedging.
 
