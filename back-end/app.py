@@ -17,7 +17,10 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000"], methods=["GET", "POST", "OPTIONS"])
+CORS(app, origins=[
+    "http://localhost:3000",  # For local development
+    "https://financialsimulator-frontend.onrender.com",
+    methods=["GET", "POST", "OPTIONS"])
 
 class BlackScholesCalculator:
     def __init__(self, S: float, K: float, T: float, r: float, sigma: float, option_type: str = 'call'):
@@ -1051,3 +1054,4 @@ if __name__ == '__main__':
     logger.info("Starting Backend Server...")
 
     app.run(debug=True, host='0.0.0.0', port=5000, threaded=True)
+
